@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СФЕК | Отбор WorldSkills Abay 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ws-blue: #0054a6;
+            --ws-yellow: #ffcc00;
+            --ws-dark: #1a1a1a;
+            --ws-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--ws-light);
+            color: var(--ws-dark);
+            line-height: 1.6;
+        }
+
+        /* Шапка сайта */
+        header {
+            background: linear-gradient(rgba(0, 84, 166, 0.9), rgba(0, 84, 166, 0.9)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .region-tag {
+            background: var(--ws-yellow);
+            color: var(--ws-dark);
+            padding: 5px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Контентная часть */
+        .main-container {
+            max-width: 1100px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .info-grid { grid-template-columns: 1fr; }
+            header { padding: 40px 20px; clip-path: none; }
+            h1 { font-size: 2rem; }
+        }
+
+        /* Карточка с информацией */
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .info-card h2 {
+            color: var(--ws-blue);
+            border-bottom: 3px solid var(--ws-yellow);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Форма регистрации */
+        .reg-form {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--ws-blue);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .form-row { grid-template-columns: 1fr; }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--ws-blue);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 84, 166, 0.1);
+        }
+
+        .submit-btn {
+            background: var(--ws-blue);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background: #003d7a;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--ws-dark);
+            color: #888;
+            margin-top: 50px;
+        }
+
+        .quote-box {
+            background: #eef5ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 4px solid var(--ws-blue);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="region-tag">СФЕК им. Р. Байсеитова</div>
+    <h1>Внутренний отбор 2026</h1>
+    <p>Путь к региональному чемпионату WorldSkills Abay</p>
+</header>
+
+<div class="main-container">
+    <div class="info-grid">
+        <div class="info-card">
+            <h2>О конкурсе</h2>
+            <p>СФЕК проводит первый этап отбора. Покажите свои знания и навыки внутри колледжа, чтобы представить нас на областном уровне!</p>
+            
+            <div class="quote-box">
+                "Знание — это богатство, которое не уменьшается." <br>— <strong>Абай Кунанбаев</strong>
+            </div>
+
+            <ul style="margin-top: 25px; padding-left: 20px;">
+                <li>Защита чести колледжа на области</li>
+                <li>Дополнительные баллы к рейтингу</li>
+                <li>Профессиональный рост и опыт</li>
+            </ul>
+        </div>
+
+        <div class="reg-form">
+            <h2 style="margin-top: 0;">Анкета участника (СФЕК)</h2>
+            <form id="wsForm" action="https://formspree.io/f/meejlyrv" method="POST">
+                <div class="form-group">
+                    <label>Фамилия, Имя, Отчество</label>
+                    <input type="text" name="ФИО" placeholder="Введите полное имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Специальность</label>
+                    <input type="text" name="Специальность" placeholder="Напр: Учет и аудит / Информационные системы" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Курс</label>
+                        <select name="Курс" required>
+                            <option value="">Выберите...</option>
+                            <option value="1">1 курс</option>
+                            <option value="2">2 курс</option>
+                            <option value="3">3 курс</option>
+                            <option value="4">4 курс</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Дата рождения</label>
+                        <input type="date" name="Дата_рождения" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Компетенция WorldSkills</label>
+                    <select name="Компетенция" required>
+                        <option value="">-- Выберите направление --</option>
+                        <option>Бухгалтерский учет</option>
+                        <option>Банковское дело</option>
+                        <option>Предпринимательство</option>
+                        <option>IT-решения для бизнеса</option>
+                        <option>Веб-технологии</option>
+                        <option>Графический дизайн</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Номер телефона (WhatsApp)</label>
+                    <input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Зарегистрироваться на отбор</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Семейский финансово-экономический колледж им. Р. Байсеитова</p>
+    <p style="font-size: 0.8rem;">Подготовка к WorldSkills Abay 2025</p>
+</footer>
+
+</body>
+</html>
